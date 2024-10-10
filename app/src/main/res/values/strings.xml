@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ToDo List</string>
+    <string name="button_add_new_note_description">button add new note</string>
+    <string name="enter_task">Введите задание:</string>
+    <string name="low">Низкий</string>
+    <string name="medium">Средний</string>
+    <string name="high">Высокий</string>
+    <string name="save">Сохранить</string>
+    <string name="error_message">Вы ничего не ввели</string>
+    <string name="text_view_choose_priority">Выберите уровень приорета</string>
+</resources>
