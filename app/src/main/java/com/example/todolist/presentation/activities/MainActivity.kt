@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
      */
     private fun setupTaskListObserver() {
         mainViewModel.getTasks().observe(this) { tasks ->
-            tasksAdapter.tasks = tasks
+            tasksAdapter.submitList(tasks )
         }
     }
 
@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
                 // Удаляем задачу при свайпе
                 override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
                     val position = viewHolder.adapterPosition
-                    val task = tasksAdapter.tasks[position]
+                    val task = tasksAdapter.currentList[position]
                     mainViewModel.remove(task)
                 }
             }
